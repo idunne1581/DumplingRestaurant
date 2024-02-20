@@ -14,3 +14,4 @@ function openMenu(event,menuName) {
     event.currentTarget.classList.add('active-tab');
 }
 document.getElementById('mainLink').click()
+
