@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Dumpling Restaurant</title>
+    <!--Google Font-->
+    <!--Might change font style to be thinner-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap" >
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <nav class = 'navbar navbar-expand-lg fixed-top opacity-hover-off' id = 'myNavbar'>
+        <div class = 'container-fluid'> 
+            <ul class ='navbar-nav'>
+                <li class='nav-item'>
+                    <!--Clean up the inline font size styling and add to the CSS file-->
+                    <!--Unamed ID automatically takes us to the top of the page-->
+                    <a class = 'nav-link' href = '#' style ='font-size: 2rem;'>Home</a>
+                </li>
+                <li class='nav-item'>
+                    <!--Clean up the inline font size styling and add to the CSS file-->
+                    <a class = 'nav-link' href = '#menu' style ='font-size: 2rem;'>Menu</a>
+                </li>
+                <li class='nav-item'>
+                    <!--Clean up the inline font size styling and add to the CSS file-->
+                    <a class = 'nav-link' href = '#about' style ='font-size: 2rem;'>About</a>
+                </li>
+                <li class='nav-item'>
+                    <!--Clean up the inline font size styling and add to the CSS file-->
+                    <a class = 'nav-link' href = '#contact' style ='font-size: 2rem;'>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Header with image--> 
+    <header class = 'bg-img d-flex flex-column justify-content-between' id="home">
+        <div></div>
+        <div class = 'd-flex flex-column text-center'>
+            <span class="display-1">Dumpling <br> House</span>
+            <p> 
+                <!--fs-2 not working-->
+                <a href='#menu' class='btn btn-lg btn-dark hover-btn fs-2'>Let me see the menu</a>
+            </p>
+        </div>    
+        <div class = 'd-flex justify-content-start'>
+            <span class = 'bg-dark text-white p-3 h2'>Open from 10am to 11pm - Call 555-555-5555</span>
+        </div>
+    </header>
+    <!--Menu Container--> 
+    <!--Container fluid makes sure element takes up the entire width of the screen-->
+    <div class = "container-fluid bg-dark text-white py-5 display-4"  id="menu">
+        <div class = 'container'>
+            <h1 class = 'text-center display-2 mb-5'>The Menu</h1>
+            <div class ='text-center border border-dark'>
+                <div class="d-flex">
+                    <a href='javascript:void(0)' onclick="openMenu(event,'Dumplings');" class="col-4 tablink p-3 hover-red" id ='mainLink'>Dumplings</a>
+                    <a href='javascript:void(0)' onclick="openMenu(event,'Sides');" class="col-4 tablink p-3 hover-red">Sides</a>
+                    <a href='javascript:void(0)' onclick="openMenu(event,'Drinks');" class="col-4 tablink p-3 hover-red">Drinks</a>
+                </div>
+            </div>
+            <!--Dumpling Menu-->
+            <div id = 'Dumplings' class ='container-fluid menu p-4 bg-white'>
+                <!--Soup Dumplings-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Xiao Long Bao(Soup Dumplings)</b></h1>
+                    <span class="badge bg-dark text-white">$9.50</span>
+                </div>
+                <p class="text-muted">Soup,Pork, Green Onion</p>
+                <hr class="text-muted">
+            </div>
+            <!--Side Menu-->
+            <div id = 'Sides' class ='container-fluid menu p-4 bg-white'>
+                <!--Edamame-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Edamame</b></h1>
+                    <span class="badge bg-dark text-white">$5.00</span>
+                </div>
+                <p class="text-muted">Lightly salted and roasted soy beans </p>
+                <hr class="text-muted">
+            </div>
+            <!--Drink Menu-->
+            <div id = 'Drinks' class ='container-fluid menu p-4 bg-white'>
+                <!--Soda-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Soda </b><span class="badge bg-grey small-tag text-white">Housemade</span></h1>
+                    <span class="badge bg-dark text-white">$2.00</span>
+                </div>
+                <p class="text-muted">Lemon/Lime,Coke,Strawberry,Orange </p>
+                <hr class="text-muted">
+            </div>
+
+
+        </div>
+    </div>
+
+<script src="script.js"></script>  
+</body>
+</html>
