@@ -66,16 +66,16 @@ body, h1, h2, h3, h4, h5, h6 {
  }
 
  /*Custom styles for Menu Box*/
-.bg-black {
-    background-color: black;
+.bg-brown {
+    background-color: rgb(55, 32, 22);
 }
-.hover-red:hover {
-    background-color: rgba(255,0,0,0.5);
+.hover-beige:hover {
+    background-color: rgb(165, 141, 71);
     color: white;
 }
 
 .active-tab {
-    background-color: red;
+    background-color: rgb(165, 141, 71);
     color: white;
 }
 .border-dark {
@@ -93,4 +93,9 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .menu h1 {
     color: black;
+}
+
+/*Greyscale*/
+.img-greyscale {
+    filter: grayscale();
 }
