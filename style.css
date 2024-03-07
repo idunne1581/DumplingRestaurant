@@ -27,7 +27,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
  .navbar-nav .nav-link {
     color: white;
-    font-size: 1.2rem;
+    font-size: 2rem;
  }
  .navbar-nav .nav-link:hover {
     background-color: rgb(37, 38, 34);
@@ -69,6 +69,10 @@ body, h1, h2, h3, h4, h5, h6 {
 .bg-brown {
     background-color: rgb(55, 32, 22);
 }
+.hover-beige {
+    color: white;
+    
+}
 .hover-beige:hover {
     background-color: rgb(165, 141, 71);
     color: white;
@@ -93,6 +97,17 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .menu h1 {
     color: black;
+}
+
+/*About Container*/
+.about-bgd {
+    background-color: rgb(2, 15, 10);
+}
+.chef-img {
+    width: 200px;
+}
+.restaurant-img {
+    width: 100%;
 }
 
 /*Greyscale*/

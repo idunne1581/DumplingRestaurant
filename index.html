@@ -8,7 +8,7 @@
     <!--Might change font style to be thinner-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap" >
     <!--Bootstrap-->
-    <!--Use the CCDN link-->
+    <!--Use the CDN link-->
     <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!--Custom CSS-->
     <link rel = 'stylesheet' href = 'style.css'>
@@ -18,21 +18,17 @@
         <div class = 'container-fluid'> 
             <ul class ='navbar-nav'>
                 <li class='nav-item'>
-                    <!--Clean up the inline font size styling and add to the CSS file-->
                     <!--Unamed ID automatically takes us to the top of the page-->
-                    <a class = 'nav-link' href = '#' style ='font-size: 2rem;'>Home</a>
+                    <a class = 'nav-link' href ='#' >Home</a>
                 </li>
                 <li class='nav-item'>
-                    <!--Clean up the inline font size styling and add to the CSS file-->
-                    <a class = 'nav-link' href = '#menu' style ='font-size: 2rem;'>Menu</a>
+                    <a class = 'nav-link' href ='#menu' >Menu</a>
                 </li>
                 <li class='nav-item'>
-                    <!--Clean up the inline font size styling and add to the CSS file-->
-                    <a class = 'nav-link' href = '#about' style ='font-size: 2rem;'>About</a>
+                    <a class = 'nav-link' href ='#about' >About</a>
                 </li>
                 <li class='nav-item'>
-                    <!--Clean up the inline font size styling and add to the CSS file-->
-                    <a class = 'nav-link' href = '#contact' style ='font-size: 2rem;'>Contact</a>
+                    <a class = 'nav-link' href ='#contact' >Contact</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +44,7 @@
             </p>
         </div>    
         <div class = 'd-flex justify-content-start'>
-            <span class = 'bg-dark text-white p-3 h2'>Open from 10am to 11pm - Call 555-555-5555</span>
+            <span class = 'bg-dark text-white p-3 h2'>Contact 555-555-5555 for any questions</span>
         </div>
     </header>
     <!--Menu Container--> 
@@ -68,10 +64,31 @@
             <div id = 'Dumplings' class ='container-fluid menu p-4 bg-white'>
                 <!--Soup Dumplings-->
                 <div class="d-flex justify-content-between align-items baseline">
-                    <h1 class="mb-0 display-3"><b>Xiao Long Bao(Soup Dumplings)</b></h1>
-                    <span class="badge bg-dark text-white">$9.50</span>
+                    <h1 class="mb-0 display-3"><b>Xiao Long Bao(Soup Dumplings)</b><span class="badge bg-grey small-tag text-white">Popular!</span></h1>
+                    <span class="badge bg-dark text-white">$8.50</span>
                 </div>
                 <p class="text-muted">Soup,Pork, Green Onion</p>
+                <hr class="text-muted">
+                <!--Pork Dumplings-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Pork Dumplings(Steamed of Fried)</b></h1>
+                    <span class="badge bg-dark text-white">$5.50</span>
+                </div>
+                <p class="text-muted">Pork,Green Onions, Ginger,Carrots</p>
+                <hr class="text-muted">
+                <!--Shrimp Dumplings-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Shrimp Dumplings(Steamed of Fried)</b></h1>
+                    <span class="badge bg-dark text-white">$5.50</span>
+                </div>
+                <p class="text-muted">Shrimp, Green Cabbage, Mushrooms, Onions</p>
+                <hr class="text-muted">
+                <!--Veggie Dumplings-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Veggie Dumplings(Steamed of Fried)</b></h1>
+                    <span class="badge bg-dark text-white">$5.50</span>
+                </div>
+                <p class="text-muted">Carrots, Green Cabbage, Mushrooms, Green Onions</p>
                 <hr class="text-muted">
             </div>
             <!--Side Menu-->
@@ -83,6 +100,20 @@
                 </div>
                 <p class="text-muted">Lightly salted and roasted soy beans </p>
                 <hr class="text-muted">
+                <!--Egg Drop Soup-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Egg Drop Soup</b></h1>
+                    <span class="badge bg-dark text-white">$3.00</span>
+                </div>
+                <p class="text-muted"></p>
+                <hr class="text-muted">
+                <!--Cucumber Salad-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Cucumber Salad</b></h1>
+                    <span class="badge bg-dark text-white">$3.00</span>
+                </div>
+                <p class="text-muted"></p>
+                <hr class="text-muted">
             </div>
             <!--Drink Menu-->
             <div id = 'Drinks' class ='container-fluid menu p-4 bg-white'>
@@ -93,6 +124,13 @@
                 </div>
                 <p class="text-muted">Lemon/Lime,Coke,Strawberry,Orange </p>
                 <hr class="text-muted">
+                <!--Tea-->
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Tea</b></h1>
+                    <span class="badge bg-dark text-white">$2.00</span>
+                </div>
+                <p class="text-muted">Oolong, Black, Green, Matcha </p>
+                <hr class="text-muted">
             </div>
 
 
@@ -100,8 +138,8 @@
     </div>
 
     <!--About Container-->
-    <!--Clean up the inline styling and add to the CSS file-->
-    <div class="container-fluid py-5 text-white" style = "background-color: rgb(2, 15, 10);" id ='about'>
+    
+    <div class="container-fluid about-bgd py-5 text-white" id ='about'>
         <div class = 'container'>
             <h1 class = 'text-center display-2 mb-3'>About</h1>
             <h1 class = 'display-4'><b>Opening Hours</b></h1>
@@ -126,13 +164,13 @@
                     </p>
                 </div>
                 <div class = 'col-lg-3 col-med-4 col-sm-12 text-end'>
-                    <!--Clean up the inline styling and add to the CSS file-->
-                    <img src = 'assets/chef.jpg' alt = 'chef image' style = 'width: 200px;' class="rounded-circle">
+                    
+                    <img src = 'assets/chef.jpg' alt = 'chef image' class="rounded-circle chef-img">
+
                 </div>
+            <img src="assets/restaurant.jpg" alt="restaurant" class="my-3 img-greyscale restaurant-img">
             </div>
-            <p class = 'fs-2'>We are proud of our creations</p>
-            <!--Clean up the inline styling and add to the CSS file-->
-            <img src="assets/resy.jpg" alt="restaurant" style="width:100%;" class="my-3 img-greyscale">
+            
         </div>
     </div>
 
@@ -165,6 +203,18 @@
             </form>
         </div>
     </div>
+    <footer class="text-center bg-dark text-white py-4">
+        <p class="fs-3 mb-0">
+            Original Design Inspired by
+            <!--Add no opener & no referrer attribute values-->
+            <a href="https://www.w3schools.com/" title="/W3 Schools" target="_blank" class="'text-sucess hover-text-green">
+                W3 Schools
+            </a>
+        </p>
+        <p class="fs-3 mb-0">Built with Bootstrap and CSS; inspired by Mayanwolfe and built by I.M.Dunne
+        </p>
+
+    </footer>
 
 <script src="script.js"></script>  
 </body>
