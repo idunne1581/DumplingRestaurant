@@ -99,10 +99,10 @@ body, h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
-/*About Container*/
+/* About Container
 .about-bgd {
     background-color: rgb(2, 15, 10);
-}
+} */
 .chef-img {
     width: 200px;
 }
@@ -120,4 +120,9 @@ body, h1, h2, h3, h4, h5, h6 {
 .extra-large{
     height: 60px;
     font-size: 1.8rem;
+}
+
+/*Contact Background*/
+.aboutContact-bgd {
+    background-color: rgb(29, 30, 28);
 }
