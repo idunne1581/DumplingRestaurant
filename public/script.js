@@ -1,3 +1,21 @@
+//Dynamically populates the input with the current date and time
+document.getElementById("dateInput").value = new Date().toISOString().slice(0, 16);
+
+//Alert Box Display Success/Failure
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search)
+
+    //Looking for parameters and alering messages depending on success or error
+    //Use ternary here?
+    if(urlParams.has('success')) {
+        alert('Reservation successful')
+    } else if(urlParams.has('error')) {
+        alert('There was an error making the reservation, please call 555-555-5555')
+    }
+}
+
+
+
 //Tabbed Menu
 
 function openMenu(event,menuName) {
@@ -20,4 +38,6 @@ function openMenu(event,menuName) {
 }
 //Click event will run to set the Dumplings menu as the default to show
 document.getElementById('mainLink').click()
+
+
 
